@@ -1,0 +1,145 @@
+/*------------------------------------*/
+/*BASIC SETUP*/
+/*------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    color: #323232;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+/*------------------------------------*/
+/*SECTION 1: HERO*/
+/*------------------------------------*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: -webkit-linear-gradient(rgba(255,255,255,0.5), rgba(54, 70, 226, 1)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    word-spacing: 2px;
+    line-height: 140%;
+}
+
+h1 {
+    font-size: 800%;
+    
+}
+
+
+h2, h3 {
+    font-weight: 400;
+}
+
+p {
+    line-height: 140%;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    padding: 12px 10px;
+    font-size: 40px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;   
+}
+
+.btn-full:link,
+.btn-full:visited {
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #ffffff1f;
+}
+
+.btn-bottom {
+    overflow: hidden;
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+/*------------------------------------*/
+/*TOP NAVIGATION*/
+/*------------------------------------*/
+.logo {
+    height: 24px;
+    width: auto;
+    float: left;
+    margin-top: 16px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 80%;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 56px;
+}
+
+.main-nav li a:visited,
+.main-nav li a:link {
+    padding: 4px;
+    color: #454545;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #3646E2;
+    border-bottom: 2px solid #3646E2;
+
+}
+/*------------------------------------*/
+/*------------------------------------*/
+
+section {
+    padding: 80px 0 56px ;
+}
+
+.span-2-of-3 {
+	padding-right: 48px; 
+}
