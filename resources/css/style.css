@@ -47,17 +47,17 @@ header {
 h1, h2, h3 {
     margin-top: 0;
     margin-bottom: 24px;
-    word-spacing: 2px;
     line-height: 140%;
 }
 
 h1 {
-    font-size: 800%;
-    
+    font-size: 700%;
+    word-spacing: -8px;
 }
 
 
 h2, h3 {
+    word-spacing: 2px;
     font-weight: 400;
 }
 
@@ -137,9 +137,73 @@ p {
 /*------------------------------------*/
 
 section {
-    padding: 80px 0 56px ;
+    padding: 120px 0 120px ;
 }
 
 .span-2-of-3 {
 	padding-right: 48px; 
 }
+
+/*------------------------------------*/
+/*WORKS SECTION*/
+/*------------------------------------*/
+
+.my-works {
+    padding: 0;
+}
+
+.works-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.works-showcase li {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.works-photo {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.works-photo img {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.works-photo:hover img {
+    opacity: 0.4;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+
+.img-description {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 40px;
+    font-size: 120%;
+    right: 0;
+    transition: opacity 0.5s;
+    color:rgba(255,255,255,0);
+    
+  }
+  
+  .works-photo:hover .img-description {
+    color:rgba(255,255,255,1);
+  }
+
+
