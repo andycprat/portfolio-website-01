@@ -28,19 +28,16 @@ html {
 }
 
 header {
-    background-image: -webkit-linear-gradient(rgba(255,255,255,0.5), rgba(54, 70, 226, 1)), url(img/hero.jpg);
+    background-image: url(resources/img/work-01.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 250px;
 }
 
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+.header-text {
+    padding-top: 128px;
+
+    
 
 }
 
@@ -157,92 +154,29 @@ section {
 .works-showcase {
     list-style: none;
     width: 100%;
-    padding: 0 0 56px;
 }
 
 .works-showcase li {
     display: block;
     float: left;
-    width: 50%;
+    width: 100%;
 }
 
 .works-photo {
     position: relative;
     width: 100%;
-    margin: 0;
-    overflow: hidden;
-    background-color: #000;
+    height: 0;
+    padding-bottom: 56.25%;
 }
 
-.works-photo img {
-    opacity: 1;
-    width: 100%;
-    height: auto;
-    -webkit-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    transform: scale(1.15);
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s;
-}
-
-.works-photo:hover img {
-    opacity: 0.4;
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03);
-}
-
-
-.img-description {
+.video {
     position: absolute;
-    top: 50%;
-    bottom: 50%;
-    left: 40px;
-    font-size: 120%;
-    right: 0;
-    transition: opacity 0.5s;
-    color:rgba(255,255,255,0);
-    
-  }
-  
-  .works-photo:hover .img-description {
-    color:rgba(255,255,255,1);
-  }
-
-
-
-/* ----------------------------------------------- */
-/* FORM */
-/* ----------------------------------------------- */
-
-.section-form {
-    top: 56px !important;
-    padding-top: 56px;
-}
-
-/*
-.contact-form {
-}
-*/
-
-input[type=text],
-input[type=email],
-select,
-textarea {
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 7px;
-    border-radius: 4px;
-    border: 1px solid #c7c7c7;
+    height: 100%;
+    padding-bottom: 56px;
 }
-
-textarea {
-    height: 100px;
-}
-
-input[type=checkbox] {
-    margin: 10px 5px 10px 0;
-}
-
 
 
 
