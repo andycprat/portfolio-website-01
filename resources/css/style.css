@@ -27,6 +27,11 @@ html {
     margin: 0 auto;
 }
 
+.row-full {
+    padding-bottom: 56px;
+    margin-bottom: 56px;
+}
+
 header {
     background-image: -webkit-linear-gradient(rgba(255,255,255,0.5), rgba(54, 70, 226, 1)), url(img/hero.jpg);
     background-size: cover;
